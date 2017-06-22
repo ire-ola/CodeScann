@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical">
-
-    <TextView
-        android:text=""
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtContent"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Process"
-        android:id="@+id/button"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/scan_button"
+        tools:layout_editor_absoluteY="48dp"
+        tools:layout_editor_absoluteX="88dp"
+        android:layout_below="@+id/barcode_result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp" />
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/imgview"/>
-</LinearLayout>
+        android:id="@+id/barcode_result"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginTop="174dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
